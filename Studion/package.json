@@ -1,0 +1,23 @@
+{
+  "name": "studion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx.live-server index.html" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamora269/studion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamora269/studion/issues"
+  },
+  "homepage": "https://github.com/zamora269/studion#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
