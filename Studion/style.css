@@ -1,4 +1,4 @@
-@import url(@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,9 +7,13 @@
 
 :root {
     font-family: 'Montserrat', sans-serif; 
-    font-size: 16px; 
+    font-size: 16px;
+    --color-copy:#333;
     --color-primary:#ffc500;
     --default-padding: 1rem;
+    color: var(--color-copy);
+
+
 }
 
 body {
@@ -18,29 +22,44 @@ body {
     
 
 }
+header,
+main,
+footer {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
 
 ul {
     display: flex;
     list-style: none;
-    padding-left: 0;
+    padding-left: 0; 
 }
 
 .navbar {
     position: fixed;
     z-index: 1;
+    top: 0;
+    left:  0;
+    width: 100%;
+    background-color:#000;/*vermelho  /  verde  /  azul  /  trasparência  0 - F */
+    color: #fff;
+ 
+}
+
+
+.navbar__container {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    top: 0;
-    left:  0;
-    
     width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
     
-   
-    background-color:#000;/*vermelho  /  verde  /  azul  /  trasparência  0 - F */
-    color: #fff;
     
 }
 
@@ -89,7 +108,7 @@ color: var(--color-primary);
 
 .slide {
     position: relative;
-    height: calc(100vh - 7.75rem);
+    height: calc(98vh - 7.75rem);
      
     }
     
@@ -123,7 +142,7 @@ color: var(--color-primary);
 
 }
 .btn {
-    cursor: pointer;
+   cursor: pointer;
    padding: 1rem 2.5rem;
    border: 0.125rem solid #fff;
    border-radius: 5rem;
@@ -136,11 +155,79 @@ color: var(--color-primary);
 }
 
 .btn:hover,
-.btn:active
-.btn:focus 
+.btn:active,
+.btn:focus,
+.btn--institutional
+
 {
-    border-color: var(--copy-primary);
+    border-color: var(--color-primary);
     background-color: var(--color-primary);
     color:#fff;
+}
+
+#counter {
+    background-color:var(--color-primary);
+    color:#fff;
+    text-transform: uppercase;
+}
+.counter__container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items:center;
+    padding: 4.375rem 1rem;
+
+}
+.counter__container h3 {
+    font-size: 2.1875rem;
+
+}
+.counter__container h3 small{
+    font-size: 1.25rem;
+    display: block;
+}
+.institutional {
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem;
+    align-items: center;
+    padding: 4.375rem;
+  
+.institucional__image {
+    max-width: 550px;
+
+
+}
+.institutional__copy {
+    padding: 0 1.875rem; 
+}
+.institutional__copy h6 {
+    font-size: .875rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin: 0;
+  
+} 
+.institutional__copy h4 {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+
+
+.institutional p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+   
+}
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
+    box-shadow: 0 1rem 1rem #0006;
+
+
+
+
 }
 
