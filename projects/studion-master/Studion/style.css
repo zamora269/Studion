@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+@import "./studion/css/_variables.css";
+@import "./studion/css/_base.css";
+@import "./studion/css/_utils.css";
+@import "./studion/css/_btn.css";
+
+@import "./studion/css/_navbar.css";
+@import "./studion/css/_hero.css";
+@import "./studion/css/_footer.css";
+
+@import "./studion/css/_home.css";
+@import "./studion/css/_contacts.css";
