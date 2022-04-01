@@ -7,7 +7,7 @@
     background: unset;
     font-size: .9375rem;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
     transition: 0.5s all ease;
 }
 
@@ -19,6 +19,17 @@
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     color:#fff;
+}
+.btn--institutional,
+.btn--quote {
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1280px) {
+    .btn--institutional
+    .btn--quote {
+    display: inline;
+    }
 }
 
 .btn--institutional:hover,
