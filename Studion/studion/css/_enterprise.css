@@ -1,0 +1,12 @@
+.enterprise {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+
+}
+.enterprise img {
+    position: relative
+}
+.enterprise__container {
+    width: 350px;
+}
